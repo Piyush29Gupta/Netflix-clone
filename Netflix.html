@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home - Netflix</title>
+</head>
+
+ <video id="background-video" autoplay loop muted class="bg-video">
+            <source src="./marvel.mp4" type="video/mp4">
+          </video>
+
+<style>
+    body{
+        background-color: black;
+        height: 2000px;
+        margin: 0px;
+    }
+
+    .bg-video
+    {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        height: 100%;
+    }
+    
+    /* .header{
+        display: flex;
+        width: 100%;
+        height: 60px;
+        background-color: rgb(0, 0, 0);
+        top: 0;
+        right: 0;
+        position: sticky ;
+        padding-top: 10px;
+        opacity: 0.65;
+        justify-content: space-between;
+        align-items: center;
+    } */
+
+    .header{
+        display: flex;
+        z-index: 10;
+        position: sticky;
+        top:0;
+        align-items: center;
+        justify-content: space-between;
+        backdrop-filter: blur(50px);
+    }
+
+    .nav-search{
+        margin-right: 50px;
+    }
+    
+    .nav-menu{
+        display: flex;
+        align-items: center;
+
+    }
+
+    .nav-menu img{
+        height: 50px;
+        width: 100px;
+        margin-left: 40px;
+        
+    }
+
+    /* .netlix-name
+    {
+        display: flex;
+        margin-left: 50px;
+        background-color: aliceblue;
+        height: 50px;
+        width: 100px;
+        background-image: url("netflix\ name.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    } */
+
+    
+
+    h4{
+        
+        color: white;
+        display:inline;
+        margin-left: 50px;
+    }
+
+    #f-r{
+        margin-top: 560px;
+    }
+    
+    .raw
+    {
+       
+        position: absolute;
+        color: white;
+        margin-left: 60px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .top-movie
+    {
+        background-color: brown;
+        height: 180px;
+        width: 237px;
+        display:inline-flex;
+        border-radius: 5px;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #tm1
+    {
+        background-image: url("https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/9337/809337-i");
+         
+    }
+
+    #tm2
+    {
+        background-image: url("https://miro.medium.com/v2/resize:fit:640/1*a7wIBOE3DKQeBQN4YuG78g.jpeg");
+         
+    }
+    #tm3
+    {
+        background-image: url("https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/9310/1569310-h-a8c1e2b77073");
+         
+    }
+    #tm4
+    {
+        background-image: url("https://images.saymedia-content.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:eco%2Cw_1200/MTc0NDU1OTIzNjgxNjY2Njk0/movie-discussion-thor-ragnarok.jpg");
+         
+    }
+    #tm5
+    {
+        background-image: url("https://images.moneycontrol.com/static-mcnews/2018/04/avengers-770x433.jpg");
+         
+    }
+    #tm6
+    {
+        background-image: url("https://ntvb.tmsimg.com/assets/p15366809_v_h10_aw.jpg?w=1280&h=720");
+         
+    }
+    .top-movie:hover{
+        
+        animation-name: zoom;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes zoom {
+        0%{
+            transform: scale(1);
+        }
+        100%
+        {
+            transform: scale(1.5);
+        }
+        
+    }
+
+    #s-r{
+        margin-top: 860px;
+    }
+
+    
+
+    #sr-tm1
+    {
+        background-image: url("https://i.ytimg.com/vi/UD_87XxocRE/sddefault.jpg");
+         
+    }
+
+    #sr-tm2
+    {
+        background-image: url("https://facts.net/wp-content/uploads/2023/06/47-facts-about-the-movie-pirates-of-the-caribbean-dead-mans-chest-1687708061.jpg");
+         
+    }
+    #sr-tm3
+    {
+        background-image: url("https://justalrightreviewsdotcom.files.wordpress.com/2017/05/pirates-of-the-caribbean-at-worlds-end.png?w=1200");
+         
+    }
+    #sr-tm4
+    {
+        background-image: url("https://i.redd.it/hynt5gwuli761.jpg");
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+    #sr-tm5
+    {
+        background-image: url("C:/Users/Piyush Gupta/OneDrive/Desktop/Projects/netflix - web/New folder/pirates of caribbean p-5.jpeg");
+         
+    }
+    #sr-tm6
+    {
+        background-image: url("https://upload.wikimedia.org/wikipedia/en/7/7a/Harry_Potter_and_the_Philosopher%27s_Stone_banner.jpg");
+    }
+    
+    #t-r{
+         margin-top: 1160px;
+    }
+   
+
+
+    #tr-tm1
+    {
+        background-image: url("https://roost.nbcuni.com/bin/viewasset.html/content/dam/Peacock/Landing-Pages/2-0-design/harrypotter/hp2/hp2-social.jpg/_jcr_content/renditions/original.JPEG");
+         
+    }
+
+    #tr-tm2
+    {
+        background-image: url("https://upload.wikimedia.org/wikipedia/en/b/bc/Prisoner_of_azkaban_UK_poster.jpg");
+         
+    }
+    #tr-tm3
+    {
+        background-image: url("https://upload.wikimedia.org/wikipedia/en/c/c9/Harry_Potter_and_the_Goblet_of_Fire_Poster.jpg");
+         
+    }
+    #tr-tm4
+    {
+        background-image: url("https://theculturednerd.org/wp-content/uploads/2020/06/order-of-the-phoenix-cover.jpg");
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+    #tr-tm5
+    {
+        background-image: url("https://upload.wikimedia.org/wikipedia/en/3/3f/Harry_Potter_and_the_Half-Blood_Prince_poster.jpg");
+         
+    }
+    #tr-tm6
+    {
+        background-image: url("https://static1.colliderimages.com/wordpress/wp-content/uploads/2021/11/hp7.jpg");
+         
+    }
+    
+    
+    #forth-r{
+        margin-top: 1460px;
+    }
+
+    
+
+    #fr-tm1
+    {
+        background-image: url("https://m.media-amazon.com/images/S/pv-target-images/1a3e948ad6a732bf674f8cd8821b95c67c18eceb5c539e1b54f2a6096fb2847b.jpg");
+         
+    }
+
+    #fr-tm2
+    {
+        background-image: url("https://www.metacritic.com/a/img/resize/82efcf137a24e05cb4a2b656f10d15a64a77cd9e/catalog/provider/2/13/2-8cc110ef6a6b862f32e0cc37c6b6b9ae.jpg?auto=webp&fit=crop&height=675&width=1200");
+         
+    }
+    #fr-tm3
+    {
+        background-image: url("https://ntvb.tmsimg.com/assets/p22671398_v_h8_aa.jpg?w=1280&h=720");
+         
+    }
+    #fr-tm4
+    {
+        background-image: url("https://m.media-amazon.com/images/M/MV5BNjhjMmVhNjMtNTQ3Zi00Yzc0LWEwNzYtMjRlNjYyYzU1MTlkXkEyXkFqcGdeQXVyMTE0MzQwMjgz._V1_QL75_UY281_CR31,0,500,281_.jpg");
+    }
+    #fr-tm5
+    {
+        background-image: url("https://i2.wp.com/3.bp.blogspot.com/-dOLMjqrx9O4/TzvLgi1BXFI/AAAAAAAAARQ/L-FnaOgZ6gM/s1600/sherlock-holmes-a-game-of-shadows13.jpg");
+         
+    }
+    #fr-tm6
+    {
+        background-image: url("https://images.news18.com/ibnlive/uploads/2022/03/fantastic-beasts-poster-16461183773x2.jpg");
+         
+    }
+    
+   
+
+</style>
+
+
+<body>
+  
+
+       
+
+          <div class="header">
+
+            <!-- <div class="netlix-name">
+
+               
+            </div> -->
+
+            <div class="nav-menu">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" alt="netflix-logo">
+            
+                    <h4>Home</h4>
+                    <h4>Tv Shows</h4>
+                    <h4>Movies </h4>
+                    <h4>New & Popular</h4>
+                    <h4>My List</h4>
+                    <h4>Browse by Languages</h4>
+            </div>
+
+            <div class="nav-search">
+                <h4>search</h4>
+            </div>
+                    
+          </div>
+
+          <div class="raw" id="f-r">
+            <h2>Top 6 Movies in India Today</h2>
+            <div class="top-movie" id="tm1"></div>
+            <div class="top-movie" id="tm2"></div>
+            <div class="top-movie" id="tm3"></div>
+            <div class="top-movie" id="tm4"></div>
+            <div class="top-movie" id="tm5"></div>
+            <div class="top-movie" id="tm6"></div>
+          </div>
+
+          <div class="raw" id="s-r">
+            <h2>Top 6 Movies </h2>
+            <div class="top-movie" id="sr-tm1"></div>
+            <div class="top-movie" id="sr-tm2"></div>
+            <div class="top-movie" id="sr-tm3"></div>
+            <div class="top-movie" id="sr-tm4"></div>
+            <div class="top-movie" id="sr-tm5"></div>
+            <div class="top-movie" id="sr-tm6"></div>
+          </div>
+
+          <div class="raw" id="t-r">
+            <h2>Watch It Again </h2>
+            <div class="top-movie" id="tr-tm1"></div>
+            <div class="top-movie" id="tr-tm2"></div>
+            <div class="top-movie" id="tr-tm3"></div>
+            <div class="top-movie" id="tr-tm4"></div>
+            <div class="top-movie" id="tr-tm5"></div>
+            <div class="top-movie" id="tr-tm6"></div>
+          </div>
+          
+          <div class="raw" id="forth-r">
+            <h2>Continue Watching </h2>
+            <div class="top-movie" id="fr-tm1"></div>
+            <div class="top-movie" id="fr-tm2"></div>
+            <div class="top-movie" id="fr-tm3"></div>
+            <div class="top-movie" id="fr-tm4"></div>
+            <div class="top-movie" id="fr-tm5"></div>
+            <div class="top-movie" id="fr-tm6"></div>
+          </div>
+
+</body>
+</html>
